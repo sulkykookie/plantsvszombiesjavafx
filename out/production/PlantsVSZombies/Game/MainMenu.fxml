@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.MainMenu">
+    <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/MainMenu.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playButton" fitHeight="111.0" fitWidth="452.0" layoutX="414.0" layoutY="270.0" onMouseEntered="#playButtonOver" onMouseExited="#playButtonExit" onMousePressed="#playButtonPressed" onMouseReleased="#playButtonReleased" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/playGameButton/idle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="resumeButton" fitHeight="111.0" fitWidth="452.0" layoutX="414.0" layoutY="392.0" onMouseEntered="#resumeButtonOver" onMouseExited="#resumeButtonExit" onMousePressed="#resumeButtonPressed" onMouseReleased="#resumeButtonReleased" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/resumeGameButton/idle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exitButton" fitHeight="111.0" fitWidth="452.0" layoutX="414.0" layoutY="516.0" onMouseEntered="#exitButtonOver" onMouseExited="#exitButtonExit" onMousePressed="#exitButtonPressed" onMouseReleased="#exitButtonReleased" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/exitGameButton/idle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="loading" disable="true" fitHeight="800.0" fitWidth="1280.0" layoutY="-40.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/PVZLoadingScreen.gif" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

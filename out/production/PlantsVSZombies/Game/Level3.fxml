@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" onMouseClicked="#placeObject" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.Level3">
+   <children>
+      <AnchorPane fx:id="gamePane" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Lawn.png" />
+               </image>
+            </ImageView>
+            <GridPane fx:id="grid" disable="true" layoutX="-1.0" prefHeight="693.0" prefWidth="1168.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="614.5999755859375" minWidth="10.0" prefWidth="272.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="989.7999877929688" minWidth="10.0" prefWidth="96.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="989.7999877929688" minWidth="10.0" prefWidth="93.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="989.7999877929688" minWidth="10.0" prefWidth="107.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="989.7999877929688" minWidth="10.0" prefWidth="94.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="989.7999877929688" minWidth="10.0" prefWidth="94.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="989.7999877929688" minWidth="10.0" prefWidth="102.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="989.7999877929688" minWidth="10.0" prefWidth="92.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="989.7999877929688" minWidth="10.0" prefWidth="102.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="989.7999877929688" minWidth="10.0" prefWidth="122.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="323.20001831054685" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="369.59999694824216" minHeight="0.0" prefHeight="130.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="378.5999816894531" minHeight="10.0" prefHeight="116.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="378.5999816894531" minHeight="10.0" prefHeight="117.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="378.5999816894531" minHeight="10.0" prefHeight="115.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="378.5999816894531" minHeight="10.0" prefHeight="126.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <ImageView fitHeight="720.0" fitWidth="1400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/HUD.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="70.0" layoutX="241.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Lawnmower.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="74.0" layoutX="227.0" layoutY="622.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Lawnmower.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="74.0" layoutX="236.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Lawnmower.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="74.0" layoutX="238.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Lawnmower.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="63.0" layoutX="238.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Lawnmower.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="psCard" fitHeight="107.0" fitWidth="84.0" layoutX="31.0" layoutY="38.0" onMouseClicked="#psClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/objectCards/PS_Card.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="sfCard" fitHeight="107.0" fitWidth="84.0" layoutX="31.0" layoutY="158.0" onMouseClicked="#sfClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/objectCards/SF_Card.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cbCard" fitHeight="107.0" fitWidth="84.0" layoutX="31.0" layoutY="278.0" onMouseClicked="#cbClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/objectCards/CB_Card.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="suncounter" alignment="CENTER" editable="false" layoutX="155.0" layoutY="91.0" prefHeight="25.0" prefWidth="77.0" promptText="SUN" text="100">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="12.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="menuButton" fitHeight="44.0" fitWidth="163.0" layoutX="1079.0" layoutY="20.0" onMouseEntered="#menuButtonEnter" onMouseExited="#menuButtonExit" onMousePressed="#menuButtonPressed" onMouseReleased="#menuButtonReleased" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/menuButton/idle.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="timerBar" fitHeight="32.0" fitWidth="651.0" layoutX="384.0" layoutY="674.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/HUD_Timer.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="resumeGameButton" disable="true" fitHeight="86.0" fitWidth="350.0" layoutX="465.0" layoutY="167.0" onMouseEntered="#resumeButtonOver" onMouseExited="#resumeButtonExit" onMousePressed="#resumeButtonPressed" onMouseReleased="#resumeButtonReleased" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/resumeGameButton/idle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="saveButton" disable="true" fitHeight="86.0" fitWidth="350.0" layoutX="465.0" layoutY="317.0" onMouseEntered="#saveButtonOver" onMouseExited="#saveButtonExit" onMousePressed="#saveButtonPressed" onMouseReleased="#saveButtonReleased" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/saveGameButton/idle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exitButton" disable="true" fitHeight="86.0" fitWidth="350.0" layoutX="465.0" layoutY="467.0" onMouseEntered="#exitButtonOver" onMouseExited="#exitButtonExit" onMousePressed="#exitButtonPressed" onMouseReleased="#exitButtonReleased" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/exitGameButton/idle.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
